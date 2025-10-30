@@ -11,6 +11,20 @@
   <meta name="description" content="Ideas are mashed potatoes. Products are towers aliens can land on. Wear the philosophy: Potatoes ≠ Product." />
 </head>
 <body>
+<body>
+  <script>
+    window.SnipcartSettings = {
+      publicApiKey: "YOUR_PUBLIC_API_KEY",
+      loadStrategy: "on-user-interaction",
+      currency: "cad",
+      modalStyle: "side"
+    };
+  </script>
+  <div id="snipcart" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js" async></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
+  <!-- the rest of your page -->
+
   <header class="site-header">
     <div class="logo">Potatoes <span class="not-equal">≠</span> Product</div>
     <nav class="nav">
@@ -51,7 +65,16 @@
           <h3>Classic Tee</h3>
           <p class="product-desc">Potatoes ≠ Product, bold type. Black or natural.</p>
           <p class="product-price">$28</p>
-          <a class="btn small" href="#!">Add to cart</a>
+          <button
+  class="btn small snipcart-add-item"
+  data-item-id="pnp-classic-tee"
+  data-item-name="Potatoes ≠ Product Tee"
+  data-item-price="28.00"
+  data-item-url="https://chreid1973.github.io/pnp/"
+>
+  Add to cart
+</button>
+
         </article>
 
         <article class="product-card">
